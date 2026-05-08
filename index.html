@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Jakob A. Frederickson | GIS Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root {
+      --bg: #f7f7f9;
+      --card-bg: #ffffff;
+      --accent: #1d6fb8;
+      --accent-soft: #e3f1ff;
+      --text: #222222;
+      --muted: #555555;
+      --border: #dddddd;
+      --mono: "Consolas", "SFMono-Regular", Menlo, Monaco, monospace;
+      --sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: var(--sans);
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .page {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 2.5rem 1.5rem 3rem;
+    }
+
+    header {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 1.5rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .intro {
+      max-width: 640px;
+    }
+
+    h1 {
+      margin: 0 0 0.25rem;
+      font-size: 2rem;
+    }
+
+    .tagline {
+      margin: 0 0 0.75rem;
+      font-size: 1rem;
+      color: var(--muted);
+    }
+
+    .contact {
+      font-size: 0.95rem;
+      color: var(--muted);
+    }
+
+    .contact div {
+      margin-bottom: 0.25rem;
+    }
+
+    .section {
+      margin-bottom: 2.25rem;
+    }
+
+    .section h2 {
+      font-size: 1.3rem;
+      margin: 0 0 1rem;
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 0.35rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      padding: 1rem 1.1rem 1.1rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+    }
+
+    .card h3 {
+      margin: 0 0 0.4rem;
+      font-size: 1.05rem;
+    }
+
+    .pill {
+      display: inline-block;
+      font-size: 0.75rem;
+      padding: 0.15rem 0.5rem;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      margin-bottom: 0.4rem;
+    }
+
+    .meta {
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-bottom: 0.4rem;
+    }
+
+    .card p {
+      margin: 0 0 0.6rem;
+      font-size: 0.9rem;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.4rem 0.8rem;
+      border-radius: 999px;
+      border: 1px solid var(--accent);
+      color: var(--accent);
+      font-size: 0.85rem;
+      font-weight: 500;
+      text-decoration: none;
+      transition: background 0.15s ease, color 0.15s ease;
+    }
+
+    .btn:hover {
+      background: var(--accent);
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem 0.75rem;
+      font-size: 0.9rem;
+    }
+
+    .skill-tag {
+      padding: 0.15rem 0.55rem;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: #ffffff;
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: minmax(0, 2fr) minmax(0, 1.4fr);
+      gap: 1.5rem;
+    }
+
+    .resume-links a {
+      display: inline-block;
+      margin-right: 0.75rem;
+      margin-bottom: 0.4rem;
+      font-size: 0.9rem;
+    }
+
+    footer {
+      margin-top: 2rem;
+      font-size: 0.8rem;
+      color: var(--muted);
+      text-align: center;
+    }
+
+    @media (max-width: 720px) {
+      .two-col {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <div class="intro">
+        <h1>Jakob A. Frederickson</h1>
+        <p class="tagline">
+          GIS analyst specializing in geospatial analysis, cartography, and ArcGIS Pro workflows for environmental and public‑sector applications.
+        </p>
+        <p>
+          I’m an early‑career GIS professional with hands‑on experience in spatial analysis, cartography, remote sensing,
+          and geodatabase management. My work focuses on environmental systems, wildfire risk, land‑use change, and
+          public‑sector geospatial data. Below is a selection of my StoryMaps and GIS projects.
+        </p>
+      </div>
+      <div class="contact">
+        <div><strong>Location:</strong> Nevada City, CA</div>
+        <div><strong>Email:</strong> <a href="mailto:jakobfrederickson3@gmail.com">jakobfrederickson3@gmail.com</a></div>
+        <div><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/jakob-frederickson-a3a136369/" target="_blank">https://www.linkedin.com/in/jakob-frederickson-a3a136369/</a></div>
+        <div><strong>Portfolio:</strong> <a href="https://jakobfrederickson3-dotcom.github.io/gis-portfolio/" target="_blank">https://jakobfrederickson3-dotcom.github.io/gis-portfolio/</a></div>
+      </div>
+    </header>
+
+    <!-- Featured Projects -->
+    <section class="section" id="storymaps">
+      <h2>Featured Projects</h2>
+      <div class="grid">
+        <article class="card">
+          <span class="pill">Wildfire • Risk • California</span>
+          <h3>Wildfire Risk Analysis in California</h3>
+          <p class="meta">Tools: ArcGIS Pro, CAL FIRE incidents, NLCD, raster analysis</p>
+          <p>
+            Analyzed relationships between vegetation, land cover, and wildfire incidents using spatial joins and raster
+            reclassification. Produced tract‑level wildfire risk maps to support hazard mitigation planning and community preparedness.
+          </p>
+          <a class="btn" href="https://jakobfrederickson3-dotcom.github.io/Jakob Frederickson - GEOG411 Project Poster-1.pdf"_blank">View Project</a>
+        </article>
+
+        <article class="card">
+          <span class="pill">Remote Sensing • Land Use</span>
+          <h3>Land‑Use Classification Using Landsat Imagery</h3>
+          <p class="meta">Tools: ArcGIS Pro, Landsat 8, supervised &amp; unsupervised classification</p>
+          <p>
+            Performed land‑use classification and accuracy assessment using ground‑truth points and confusion matrices.
+            Mapped land‑use change patterns to support environmental assessment and planning.
+          </p>
+          <a class="btn" href="#" target="_blank">View StoryMap</a>
+        </article>
+
+        <article class="card">
+          <span class="pill">Cartography • Visualization</span>
+          <h3>Environmental &amp; Socio‑Spatial StoryMaps Portfolio</h3>
+          <p class="meta">Tools: ArcGIS StoryMaps, advanced cartography</p>
+          <p>
+            Designed interactive StoryMaps communicating environmental and socio‑spatial patterns using advanced cartographic
+            techniques, clear symbology, and narrative structure for public‑facing communication.
+          </p>
+          <a class="btn" href="#" target="_blank">View StoryMap</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- GIS Projects -->
+    <section class="section" id="projects">
+      <h2>Experience</h2>
+      <div class="two-col">
+        <div>
+          <article class="card">
+            <h3>Road Network Update for Nevada County</h3>
+            <p class="meta">ArcGIS Pro • Data maintenance • Public‑sector roads</p>
+            <p>
+              Updated 150+ road segments in county geodatabases, performed topology checks and attribute standardization,
+              and improved routing accuracy for emergency response and public works operations.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Geodatabase Design for Upper‑Division GIS Courses</h3>
+            <p class="meta">ArcGIS Pro • Geodatabases • Education support</p>
+            <p>
+              Built multi‑layer geodatabases integrating environmental, political, and demographic datasets to support
+              faculty research and student projects in upper‑division GIS courses.
+            </p>
+          </article>
+        </div>
+
+        <!-- Skills + Resume -->
+        <div>
+          <article class="card">
+            <h3>Technical Skills</h3>
+            <p class="meta">Core tools and methods</p>
+            <div class="skills-list">
+              <span class="skill-tag">ArcGIS Pro</span>
+              <span class="skill-tag">ArcGIS Online</span>
+              <span class="skill-tag">ModelBuilder</span>
+              <span class="skill-tag">ArcPy</span>
+              <span class="skill-tag">Experience Builder</span>
+              <span class="skill-tag">Dashboards</span>
+              <span class="skill-tag">Landsat</span>
+              <span class="skill-tag">NAIP</span>
+              <span class="skill-tag">Python (ArcPy)</span>
+              <span class="skill-tag">SQL (intro)</span>
+              <span class="skill-tag">StoryMaps</span>
+              <span class="skill-tag">Symbology design</span>
+              <span class="skill-tag">Geodatabases</span>
+              <span class="skill-tag">Raster &amp; vector analysis</span>
+              <span class="skill-tag">Google Earth Pro</span>
+              <span class="skill-tag">Excel</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Resume &amp; Background</h3>
+            <p class="meta">B.A. Geography (Physical and Environmental), CSU Chico — December 2025</p>
+            <p>
+              Focus areas: GIS &amp; cartography, remote sensing, environmental systems, and planning &amp; sustainability.
+              Experience includes academic GIS support, county‑level data maintenance, and applied environmental analysis.
+            </p>
+            <div class="resume-links">
+              <a class="btn" href="#" target="_blank">Download Full Resume (PDF)</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certificates & Contact -->
+    <section class="section" id="certificates">
+      <h2>Certificates &amp; Training</h2>
+      <div class="card">
+        <p class="meta">ESRI Online Certificates (7)</p>
+        <p>
+          Spatial Analysis, Remote Sensing Fundamentals, ArcGIS Pro Basics, Python for GIS, Cartography,
+          Data Management, and Web GIS.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <h2>Contact</h2>
+      <div class="card">
+        <p>
+          I’m interested in GIS Analyst/Technician roles and early‑career geospatial positions, especially in
+          environmental management, and planning applications.
+        </p>
+        <p>
+          <strong>Email:</strong> <a href="mailto:jakobfrederickson3@gmail.com">jakobfrederickson3@gmail.com</a><br />
+          <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/jakob-frederickson-a3a136369/" target="_blank">https://www.linkedin.com/in/jakob-frederickson-a3a136369</a><br />
+          <strong>Location:</strong> Nevada City, CA
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      &copy; <span id="year"></span> Jakob A. Frederickson · GIS Portfolio
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html> 
